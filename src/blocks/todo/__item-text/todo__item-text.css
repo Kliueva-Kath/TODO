@@ -1,0 +1,10 @@
+.todo__item-text {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: left;
+  color: rgb(7, 42, 24);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

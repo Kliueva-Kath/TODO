@@ -1,0 +1,15 @@
+.todo__item {
+  list-style: none;
+  width: 90%;
+  height: 45px;
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(51, 244, 189);
+  border-radius: 4px;
+  box-shadow: 4px 4px 9px 0px rgb(112 246 228 / 50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background-color: white;
+}

@@ -1,0 +1,15 @@
+.task-editor__save-button {
+  appearance: none;
+  box-sizing: border-box;
+  display: block;
+  border: none;
+  background-color: rgb(6, 120, 196);
+  color: white;
+  height: 40px;
+  width: 80%;
+}
+
+.task-editor__save-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}

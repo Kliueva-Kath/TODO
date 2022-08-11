@@ -1,0 +1,4 @@
+.todo__item-options {
+  display: flex;
+  gap: 8px;
+}

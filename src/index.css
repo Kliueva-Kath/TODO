@@ -1,13 +1,14 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("./blocks/header/header.css");
+@import url("./blocks/header/__title/header__title.css");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url("./blocks/todo/todo.css");
+@import url("./blocks/todo/__item/todo__item.css");
+@import url("./blocks/todo/__items-container/todo__items-container.css");
+@import url("./blocks/todo/__item-text/todo__item-text.css");
+@import url("./blocks/todo/__item-options/todo__item-options.css");
+@import url("./blocks/todo/__delete-button/todo__delete-button.css");
+@import url("./blocks/todo/__edit-button/todo__edit-button.css");
+
+@import url("./blocks/task-editor/task-editor.css");
+@import url("./blocks/task-editor/__edit-window/task-editor__edit-window.css");
+@import url("./blocks/task-editor/__save-button/task-editor__save-button.css");

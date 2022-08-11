@@ -1,0 +1,9 @@
+.todo {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid rgb(0, 208, 250);
+  border-radius: 5px;
+  background-color: rgba(151, 250, 247, 0.3);
+  min-height: 80vh;
+}

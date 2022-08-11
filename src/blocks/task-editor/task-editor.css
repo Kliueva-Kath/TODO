@@ -1,0 +1,11 @@
+.task-editor {
+  width: 50%;
+  border-left: 3px solid rgb(0, 208, 250);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 15px;
+}
