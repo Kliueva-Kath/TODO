@@ -1,16 +1,16 @@
-.todo__edit-button {
+.todo-item__delete-button {
   appearance: none;
   box-sizing: border-box;
   display: block;
   border: none;
   background-color: transparent;
-  background-image: url("../../../images/edit-icon.png");
+  background-image: url("../../../images/delete-icon.png");
   background-size: contain;
   width: 22px;
   height: 22px;
 }
 
-.todo__edit-button:hover {
+.todo-item__delete-button:hover {
   opacity: 0.7;
   cursor: pointer;
 }

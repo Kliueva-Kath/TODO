@@ -1,0 +1,7 @@
+.todo-item__states {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin: 0 8px;
+  height: 15px;
+}

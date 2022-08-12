@@ -2,12 +2,23 @@
 @import url("./blocks/header/__title/header__title.css");
 
 @import url("./blocks/todo/todo.css");
-@import url("./blocks/todo/__item/todo__item.css");
 @import url("./blocks/todo/__items-container/todo__items-container.css");
-@import url("./blocks/todo/__item-text/todo__item-text.css");
-@import url("./blocks/todo/__item-options/todo__item-options.css");
-@import url("./blocks/todo/__delete-button/todo__delete-button.css");
-@import url("./blocks/todo/__edit-button/todo__edit-button.css");
+
+@import url("./blocks/todo-item/todo-item.css");
+@import url("./blocks/todo-item/_type/_awaiting/todo-item_type_awaiting.css");
+@import url("./blocks/todo-item/_type/_done/todo-item_type_done.css");
+@import url("./blocks/todo-item/_type/_in-progress/todo-item_type_in-progress.css");
+@import url("./blocks/todo-item/__delete-button/todo-item__delete-button.css");
+@import url("./blocks/todo-item/__edit-button/todo-item__edit-button.css");
+@import url("./blocks/todo-item/__options/todo-item__options.css");
+@import url("./blocks/todo-item/__text/todo-item__text.css");
+@import url("./blocks/todo-item/__states/todo-item__states.css");
+@import url("./blocks/todo-item/__state-tooltip/todo-item__state-tooltip.css");
+@import url("./blocks/todo-item/__state-button/todo-item__state-button.css");
+@import url("./blocks/todo-item/__state-button/_type/_blue/todo-item__state-button_type_blue.css");
+@import url("./blocks/todo-item/__state-button/_type/_gray/todo-item__state-button_type_gray.css");
+@import url("./blocks/todo-item/__state-button/_type/_green/todo-item__state-button_type_green.css");
+@import url("./blocks/todo-item/__button-panel/todo-item__button-panel.css");
 
 @import url("./blocks/task-editor/task-editor.css");
 @import url("./blocks/task-editor/__edit-window/task-editor__edit-window.css");

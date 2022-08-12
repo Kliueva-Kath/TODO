@@ -1,0 +1,21 @@
+export default function TaskStateColorsPanel() {
+  return (
+    <div className='task-states'>
+      <h2 className='task-states__header'>Статус:</h2>
+      <ul className='task-states__state-container'>
+        <li className='task-states__state'>
+          <div className='task-states__color'></div>
+          <p className='task-states__state-name'></p>
+        </li>
+        <li className='task-states__state'>
+          <div className='task-states__color'></div>
+          <p className='task-states__state-name'></p>
+        </li>
+        <li className='task-states__state'>
+          <div className='task-states__color'></div>
+          <p className='task-states__state-name'></p>
+        </li>
+      </ul>
+    </div>
+  );
+}

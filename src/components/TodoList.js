@@ -1,12 +1,11 @@
 import TodoTask from "./TodoTask";
 
-export default function TodoList() {
+export default function TodoList({ tasks }) {
   return (
     <ul className='todo__items-container'>
-      <TodoTask />
-      <button type='button' className='todo__add-task-button'>
-        Новая заметка
-      </button>
+      {tasks.map((task) => {
+        return <TodoTask task={task} key={task._id} />;
+      })}
     </ul>
   );
 }

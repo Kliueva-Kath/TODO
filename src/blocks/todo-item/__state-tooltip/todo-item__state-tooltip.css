@@ -1,0 +1,27 @@
+.todo-item__state-tooltip {
+  visibility: hidden;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  position: absolute;
+  z-index: 1;
+  width: 80px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -40px;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+}
+
+.todo-item__state-tooltip::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: lightblue transparent transparent transparent;
+}

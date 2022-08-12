@@ -5,7 +5,7 @@ export default function TaskEditor() {
         className='task-editor__edit-window'
         placeholder='Введите заметку'></textarea>
       <button type='submit' className='task-editor__save-button'>
-        Сохранить
+        Создать
       </button>
     </div>
   );

@@ -1,0 +1,17 @@
+.todo-item__state-button {
+  appearance: none;
+  box-sizing: border-box;
+  display: block;
+  border: 1px solid rgb(38, 0, 255);
+  width: 15px;
+  height: 15px;
+  position: relative;
+}
+
+.todo-item__state-button:hover {
+  border: 2px solid black;
+}
+
+.todo-item__state-button:hover .todo-item__state-tooltip {
+  visibility: visible;
+}
