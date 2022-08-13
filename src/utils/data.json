@@ -1,82 +1,38 @@
 [
   {
     "_id": 1,
-    "task": "Give dog a bath"
+    "task": "Создать приложение todo-list с create-react-app"
   },
   {
     "_id": 2,
-    "task": "Do laundry"
+    "task": "Сверстать приложение"
   },
   {
     "_id": 3,
-    "task": "Vacuum floor"
+    "task": "Добавить начальные заметки"
   },
   {
     "_id": 4,
-    "task": "Feed cat"
+    "task": "Настроить добавление заметок"
   },
   {
     "_id": 5,
-    "task": "Change light bulbs"
+    "task": "Настроить изменение статуса заметок"
   },
   {
     "_id": 6,
-    "task": "Go to Store"
+    "task": "Настроить добавление новых заметок"
   },
   {
     "_id": 7,
-    "task": "Fill gas tank"
+    "task": "Настроить редактирование заметок"
   },
   {
     "_id": 8,
-    "task": "Change linens"
+    "task": "Настроить удаление заметок"
   },
   {
     "_id": 9,
-    "task": "Rake leaves"
-  },
-  {
-    "_id": 10,
-    "task": "Bake Cookies"
-  },
-  {
-    "_id": 11,
-    "task": "Take nap"
-  },
-  {
-    "_id": 12,
-    "task": "Read book"
-  },
-  {
-    "_id": 13,
-    "task": "Exercise"
-  },
-  {
-    "_id": 14,
-    "task": "Give dog a bath"
-  },
-  {
-    "_id": 15,
-    "task": "Do laundry"
-  },
-  {
-    "_id": 16,
-    "task": "Vacuum floor"
-  },
-  {
-    "_id": 17,
-    "task": "Feed cat"
-  },
-  {
-    "_id": 18,
-    "task": "Change light bulbs"
-  },
-  {
-    "_id": 19,
-    "task": "Go to Store"
-  },
-  {
-    "_id": 20,
-    "task": "Fill gas tank"
+    "task": "Добавить кнопку «отменить редактирование»"
   }
 ]

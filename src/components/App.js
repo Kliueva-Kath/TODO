@@ -41,13 +41,10 @@ function App() {
 
     setEditValue("");
     setIsEditing(false);
-    /*     [...toDo].filter(task => task.id !== updateData.id)
-    setToDo([
-      ...removeOldRecord, 
-      updateData
-    ])
-    
-    setUpdateData('') */
+  }
+
+  function handleCancelEditButtonClick() {
+    setIsEditing(false);
   }
 
   return (
@@ -66,6 +63,7 @@ function App() {
             isEditing={isEditing}
             editValue={editValue}
             onEditFormChange={handleEditFormChange}
+            onCancelEditButtonClick={handleCancelEditButtonClick}
           />
         ) : (
           <AddTaskForm onAddTask={handleAddTask} />

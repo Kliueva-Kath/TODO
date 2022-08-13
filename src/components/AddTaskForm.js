@@ -14,13 +14,16 @@ export default function AddTaskForm({ onAddTask }) {
     setInputValue("");
   }
   return (
-    <Form onSubmit={handleSubmit} buttonText='Добавить заметку'>
+    <Form onSubmit={handleSubmit}>
       <textarea
         className='form__edit-window'
         placeholder='Введите заметку'
         onChange={handleChange}
         value={inputValue || ""}
         required></textarea>
+      <button type='submit' className='form__save-button'>
+        Добавить заметку
+      </button>
     </Form>
   );
 }

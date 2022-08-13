@@ -23,3 +23,4 @@
 @import url("./blocks/form/form.css");
 @import url("./blocks/form/__edit-window/form__edit-window.css");
 @import url("./blocks/form/__save-button/form__save-button.css");
+@import url("./blocks/form/__cancel-button/form__cancel-button.css");

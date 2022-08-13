@@ -6,18 +6,15 @@ export default function EditTaskForm({
   editedTask,
   editValue,
   onEditFormChange,
+  onCancelEditButtonClick,
 }) {
-  /*   const [inputValue, setInputValue] = useState(editedTask.task);
-
-  function handleChange(evt) {
-    setInputValue(evt.target.value);
-  } */
-  console.log(editedTask.task);
+  function handleCancelEditButtonClick() {
+    onCancelEditButtonClick();
+  }
 
   function handleSubmit(evt) {
     evt.preventDefault();
     onEditTask(editValue);
-    console.log("clicked");
   }
   return (
     <Form onSubmit={handleSubmit} buttonText='Сохранить изменения'>
@@ -27,6 +24,15 @@ export default function EditTaskForm({
         onChange={onEditFormChange}
         value={editValue}
         required></textarea>
+      <button type='submit' className='form__save-button'>
+        Сохранить изменения
+      </button>
+      <button
+        type='button'
+        className='form__cancel-button'
+        onClick={handleCancelEditButtonClick}>
+        Отменить редактирование
+      </button>
     </Form>
   );
 }
