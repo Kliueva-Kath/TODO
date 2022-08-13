@@ -1,14 +1,9 @@
-export default function Form() {
+export default function Form({ children, buttonText, onSubmit }) {
   return (
-    <form className='form'>
-      <textarea
-        className='form__edit-window'
-        placeholder='Введите заметку'
-        onChange={handleChange}
-        value={taskValue || ""}
-        required></textarea>
+    <form className='form' onSubmit={onSubmit}>
+      {children}
       <button type='submit' className='form__save-button'>
-        Создать
+        {buttonText}
       </button>
     </form>
   );

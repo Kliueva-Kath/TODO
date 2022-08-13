@@ -1,30 +1,32 @@
 import { useState } from "react";
 import Form from "./Form";
 
-export default function EditTaskForm({ onAddTask }) {
-  const [taskValue, setTaskValue] = useState("");
+export default function EditTaskForm({
+  onEditTask,
+  editedTask,
+  editValue,
+  onEditFormChange,
+}) {
+  /*   const [inputValue, setInputValue] = useState(editedTask.task);
 
   function handleChange(evt) {
-    setTaskValue(evt.target.value);
-  }
+    setInputValue(evt.target.value);
+  } */
+  console.log(editedTask.task);
 
   function handleSubmit(evt) {
     evt.preventDefault();
+    onEditTask(editValue);
     console.log("clicked");
-    onAddTask(taskValue);
-    setTaskValue("");
   }
   return (
-    <form className='form' onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} buttonText='Сохранить изменения'>
       <textarea
         className='form__edit-window'
-        placeholder='Введите заметку'
-        onChange={handleChange}
-        value={taskValue || ""}
+        placeholder='Внесите свои изменения'
+        onChange={onEditFormChange}
+        value={editValue}
         required></textarea>
-      <button type='submit' className='form__save-button'>
-        Создать
-      </button>
-    </form>
+    </Form>
   );
 }

@@ -1,29 +1,75 @@
 import { useState } from "react";
-import { nanoid } from "nanoid";
 import "./App.css";
 import Header from "./Header";
 import TodoList from "./TodoList";
+import AddTaskForm from "./AddTaskForm";
 import EditTaskForm from "./EditTaskForm";
 import data from "./data.json";
 
 function App() {
   const [tasks, setTasks] = useState(data);
+  const [isEditing, setIsEditing] = useState(false);
+  const [editedTask, setEditedTask] = useState([]);
+  const [editValue, setEditValue] = useState("");
 
   function handleDeleteTask(task) {
     setTasks((state) => state.filter((t) => t._id !== task._id));
   }
 
   function handleAddTask(taskValue) {
-    const newTask = { _id: nanoid(), task: taskValue };
+    const newTask = { _id: Math.floor(Math.random() * 10000), task: taskValue };
     setTasks([newTask, ...tasks]);
+  }
+
+  function handleEditTaskButtonClick(clickedTask) {
+    setIsEditing(true);
+    setEditedTask(clickedTask);
+    setEditValue(clickedTask.task);
+  }
+
+  function handleEditFormChange(evt) {
+    setEditValue(evt.target.value);
+  }
+
+  function handleEditTask(editValue) {
+    const tasksUpdate = [...tasks].filter(
+      (task) => task._id !== editedTask._id
+    );
+    const newTask = { _id: editedTask._id, task: editValue };
+
+    setTasks([newTask, ...tasksUpdate]);
+
+    setEditValue("");
+    setIsEditing(false);
+    /*     [...toDo].filter(task => task.id !== updateData.id)
+    setToDo([
+      ...removeOldRecord, 
+      updateData
+    ])
+    
+    setUpdateData('') */
   }
 
   return (
     <div className='App'>
       <Header />
       <div className='todo'>
-        <TodoList tasks={tasks} onDeleteTask={handleDeleteTask} />
-        <EditTaskForm onAddTask={handleAddTask} />
+        <TodoList
+          tasks={tasks}
+          onDeleteTask={handleDeleteTask}
+          onEditTaskButtonClick={handleEditTaskButtonClick}
+        />
+        {isEditing ? (
+          <EditTaskForm
+            onEditTask={handleEditTask}
+            editedTask={editedTask}
+            isEditing={isEditing}
+            editValue={editValue}
+            onEditFormChange={handleEditFormChange}
+          />
+        ) : (
+          <AddTaskForm onAddTask={handleAddTask} />
+        )}
       </div>
     </div>
   );
