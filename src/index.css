@@ -20,6 +20,6 @@
 @import url("./blocks/todo-item/__state-button/_type/_green/todo-item__state-button_type_green.css");
 @import url("./blocks/todo-item/__button-panel/todo-item__button-panel.css");
 
-@import url("./blocks/task-editor/task-editor.css");
-@import url("./blocks/task-editor/__edit-window/task-editor__edit-window.css");
-@import url("./blocks/task-editor/__save-button/task-editor__save-button.css");
+@import url("./blocks/form/form.css");
+@import url("./blocks/form/__edit-window/form__edit-window.css");
+@import url("./blocks/form/__save-button/form__save-button.css");

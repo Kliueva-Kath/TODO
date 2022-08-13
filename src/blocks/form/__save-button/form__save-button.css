@@ -1,4 +1,4 @@
-.task-editor__save-button {
+.form__save-button {
   appearance: none;
   box-sizing: border-box;
   display: block;
@@ -9,7 +9,7 @@
   width: 80%;
 }
 
-.task-editor__save-button:hover {
+.form__save-button:hover {
   opacity: 0.7;
   cursor: pointer;
 }

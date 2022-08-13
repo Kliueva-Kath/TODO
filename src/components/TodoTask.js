@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function TodoTask({ task }) {
+export default function TodoTask({ task, onDeleteTask }) {
   const [isAwaiting, setIsAwaiting] = useState(false);
   const [isInProgress, setIsInProgress] = useState(false);
   const [isDone, setIsDone] = useState(false);
@@ -21,6 +21,10 @@ export default function TodoTask({ task }) {
     setIsDone(true);
     setIsInProgress(false);
     setIsAwaiting(false);
+  }
+
+  function handleDeleteTask() {
+    onDeleteTask(task);
   }
 
   return (
@@ -51,15 +55,11 @@ export default function TodoTask({ task }) {
           </button>
         </div>
         <div className='todo-item__options'>
-          <button
-            type='button'
-            className='todo-item__edit-button'
-            alt='edit task'
-          />
+          <button type='button' className='todo-item__edit-button' />
           <button
             type='button'
             className='todo-item__delete-button'
-            alt='delete task'
+            onClick={handleDeleteTask}
           />
         </div>
       </div>

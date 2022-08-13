@@ -1,102 +1,82 @@
 [
   {
     "_id": 1,
-    "task": "Give dog a bath",
-    "complete": true
+    "task": "Give dog a bath"
   },
   {
     "_id": 2,
-    "task": "Do laundry",
-    "complete": true
+    "task": "Do laundry"
   },
   {
     "_id": 3,
-    "task": "Vacuum floor",
-    "complete": false
+    "task": "Vacuum floor"
   },
   {
     "_id": 4,
-    "task": "Feed cat",
-    "complete": true
+    "task": "Feed cat"
   },
   {
     "_id": 5,
-    "task": "Change light bulbs",
-    "complete": false
+    "task": "Change light bulbs"
   },
   {
     "_id": 6,
-    "task": "Go to Store",
-    "complete": true
+    "task": "Go to Store"
   },
   {
     "_id": 7,
-    "task": "Fill gas tank",
-    "complete": true
+    "task": "Fill gas tank"
   },
   {
     "_id": 8,
-    "task": "Change linens",
-    "complete": false
+    "task": "Change linens"
   },
   {
     "_id": 9,
-    "task": "Rake leaves",
-    "complete": true
+    "task": "Rake leaves"
   },
   {
     "_id": 10,
-    "task": "Bake Cookies",
-    "complete": false
+    "task": "Bake Cookies"
   },
   {
     "_id": 11,
-    "task": "Take nap",
-    "complete": true
+    "task": "Take nap"
   },
   {
     "_id": 12,
-    "task": "Read book",
-    "complete": true
+    "task": "Read book"
   },
   {
     "_id": 13,
-    "task": "Exercise",
-    "complete": false
+    "task": "Exercise"
   },
   {
     "_id": 14,
-    "task": "Give dog a bath",
-    "complete": false
+    "task": "Give dog a bath"
   },
   {
     "_id": 15,
-    "task": "Do laundry",
-    "complete": false
+    "task": "Do laundry"
   },
   {
     "_id": 16,
-    "task": "Vacuum floor",
-    "complete": false
+    "task": "Vacuum floor"
   },
   {
     "_id": 17,
-    "task": "Feed cat",
-    "complete": true
+    "task": "Feed cat"
   },
   {
     "_id": 18,
-    "task": "Change light bulbs",
-    "complete": false
+    "task": "Change light bulbs"
   },
   {
     "_id": 19,
-    "task": "Go to Store",
-    "complete": false
+    "task": "Go to Store"
   },
   {
     "_id": 20,
-    "task": "Fill gas tank",
-    "complete": false
+    "task": "Fill gas tank"
   }
 ]
