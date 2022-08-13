@@ -15,3 +15,10 @@
 .todo-item__state-button:hover .todo-item__state-tooltip {
   visibility: visible;
 }
+
+@media screen and (max-width: 600px) {
+  .todo-item__state-button {
+    width: 14px;
+    height: 14px;
+  }
+}

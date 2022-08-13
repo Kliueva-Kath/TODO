@@ -13,3 +13,20 @@
   padding: 0 10px;
   background-color: lightgray;
 }
+
+@media screen and (max-width: 900px) {
+  .todo-item {
+    height: 51px;
+    flex-direction: column;
+    padding: 4px 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .todo-item {
+    height: 46px;
+    flex-direction: column;
+    padding: 4px 6px;
+    width: 95%;
+  }
+}

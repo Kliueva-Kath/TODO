@@ -7,4 +7,20 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin: 0;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .todo-item__text {
+    font-size: 14px;
+    margin: 0;
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .todo-item__text {
+    font-size: 12px;
+  }
 }

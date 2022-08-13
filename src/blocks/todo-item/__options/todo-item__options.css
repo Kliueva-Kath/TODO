@@ -2,3 +2,9 @@
   display: flex;
   gap: 8px;
 }
+
+@media screen and (max-width: 900px) {
+  .todo-item__options {
+    gap: 6px;
+  }
+}

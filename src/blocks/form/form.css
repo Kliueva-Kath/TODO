@@ -1,5 +1,6 @@
 .form {
-  width: 50%;
+  box-sizing: border-box;
+  width: 60%;
   border-left: 3px solid rgb(0, 208, 250);
   background-color: white;
   display: flex;
