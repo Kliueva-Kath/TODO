@@ -4,7 +4,7 @@ import Header from "./Header";
 import TodoList from "./TodoList";
 import AddTaskForm from "./AddTaskForm";
 import EditTaskForm from "./EditTaskForm";
-import data from "./data.json";
+import data from "../utils/data.json";
 
 function App() {
   const [tasks, setTasks] = useState(data);
