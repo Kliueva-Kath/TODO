@@ -20,6 +20,6 @@
 
 1. [Научиться учиться](https://kliueva-kath.github.io/how-to-learn/)
 2. [Путешествия по России](https://kliueva-kath.github.io/russian-travel/)
-3. [Premium Car Blog](https://github.com/Kliueva-Kath/premium-car-blog/)
+3. [Premium Car Blog](https://kliueva-kath.github.io/premium-car-blog/)
 4. [Mesto](https://kliueva-kath.github.io/mesto/)
 5. [Mesto на React](https://kliueva-kath.github.io/mesto-react/)
