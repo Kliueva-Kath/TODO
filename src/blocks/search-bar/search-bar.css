@@ -1,0 +1,26 @@
+.search-bar {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: left;
+  box-sizing: border-box;
+  width: 90%;
+  height: 30px;
+  border: 2px solid rgb(0, 208, 250);
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .search-bar {
+    padding: 0 6px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-bar {
+    width: 95%;
+    font-size: 12px;
+  }
+}

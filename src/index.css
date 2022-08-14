@@ -3,6 +3,9 @@
 
 @import url("./blocks/todo/todo.css");
 @import url("./blocks/todo/__items-container/todo__items-container.css");
+@import url("./blocks/todo/__left-side/todo__left-side.css");
+
+@import url("./blocks/search-bar/search-bar.css");
 
 @import url("./blocks/todo-item/todo-item.css");
 @import url("./blocks/todo-item/_type/_awaiting/todo-item_type_awaiting.css");

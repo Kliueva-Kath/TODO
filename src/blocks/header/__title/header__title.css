@@ -3,6 +3,7 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 30px;
   color: rgb(6, 33, 102);
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {

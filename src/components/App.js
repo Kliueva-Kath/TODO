@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./Header";
 import TodoList from "./TodoList";
 import AddTaskForm from "./AddTaskForm";
 import EditTaskForm from "./EditTaskForm";
+import SearchBar from "./SearchBar";
 import data from "../utils/data.json";
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
   const [editedTask, setEditedTask] = useState({});
   // стейт контролируемого инпута формы редактирования
   const [editValue, setEditValue] = useState("");
+  // стейт контролируемого инпута формы поиска
+  const [searchTerm, setSearchTerm] = useState("");
 
   /**
    *Отвечает за удаление заметки
@@ -89,15 +92,42 @@ function App() {
     setIsEditing(false);
   }
 
+  /**
+   * Отвечает за контроль за изменением инпута строки поиска
+   * при каждом изменении активирует функцию поиска
+   * @param {object} evt - событие изменения инпута
+   * @returns {any}
+   */
+  function handleSearchInputChange(evt) {
+    setSearchTerm(evt.target.value);
+    console.log(searchTerm);
+  }
+
+  // поиск заметок
+  // эффект использован, чтобы избегать отставания стейта searchTerm от значения инпута
+  // без подключения к серверу поиск работает только на изначальном массиве, представленном непосредственно в коде
+  useEffect(() => {
+    const foundTasks = data.filter((task) => {
+      return task.task.toLowerCase().includes(searchTerm.toLowerCase());
+    });
+    setTasks(foundTasks);
+  }, [searchTerm]);
+
   return (
     <div className='App'>
       <Header />
       <div className='todo'>
-        <TodoList
-          tasks={tasks}
-          onDeleteTask={handleDeleteTask}
-          onEditTaskButtonClick={handleEditTaskButtonClick}
-        />
+        <div className='todo__left-side'>
+          <SearchBar
+            onSearchInputChange={handleSearchInputChange}
+            searchTerm={searchTerm}
+          />
+          <TodoList
+            tasks={tasks}
+            onDeleteTask={handleDeleteTask}
+            onEditTaskButtonClick={handleEditTaskButtonClick}
+          />
+        </div>
         {isEditing ? (
           <EditTaskForm
             onEditTask={handleEditTask}

@@ -11,6 +11,7 @@ export default function AddTaskForm({ onAddTask }) {
    */
   function handleChange(evt) {
     setInputValue(evt.target.value);
+    console.log(inputValue);
   }
 
   /**
