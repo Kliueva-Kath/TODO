@@ -1,20 +1,31 @@
 import { useState } from "react";
-import Form from "./Form";
 
+// компонент формы добавления заметки
 export default function AddTaskForm({ onAddTask }) {
+  // стейт контролируемого инпута формы
   const [inputValue, setInputValue] = useState("");
 
+  /**
+   * Отвечает за отслеживание изменений инпута
+   * @param {object} evt
+   */
   function handleChange(evt) {
     setInputValue(evt.target.value);
   }
 
+  /**
+   * Отвечает за отправку формы добавления заметки -
+   * вызывает функцию добавления из App.js и очищает инпут
+   * @param {object} evt
+   */
   function handleSubmit(evt) {
     evt.preventDefault();
     onAddTask(inputValue);
     setInputValue("");
   }
+
   return (
-    <Form onSubmit={handleSubmit}>
+    <form className='form' onSubmit={handleSubmit}>
       <textarea
         className='form__edit-window'
         placeholder='Введите заметку'
@@ -24,6 +35,6 @@ export default function AddTaskForm({ onAddTask }) {
       <button type='submit' className='form__save-button'>
         Добавить заметку
       </button>
-    </Form>
+    </form>
   );
 }

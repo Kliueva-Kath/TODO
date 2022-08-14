@@ -1,5 +1,6 @@
 import TodoTask from "./TodoTask";
 
+// компонент списка заметок
 export default function TodoList({
   tasks,
   onDeleteTask,

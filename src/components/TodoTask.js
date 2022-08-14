@@ -1,36 +1,60 @@
 import { useState } from "react";
 
+// компонент отдельной заметки
 export default function TodoTask({
   task,
   onDeleteTask,
   onEditTaskButtonClick,
 }) {
+  // стейт - заметка ожидает
   const [isAwaiting, setIsAwaiting] = useState(false);
+  // стейт - заметка в процессе выполнения
   const [isInProgress, setIsInProgress] = useState(false);
+  // стейт - заметка выполнена
   const [isDone, setIsDone] = useState(false);
 
+  /**
+   * Отвечает за изменение статуса заметки на "ожидает"
+   * при клике на серую кнопку
+   */
   function handleGreyButtonClick() {
     setIsAwaiting(true);
     setIsInProgress(false);
     setIsDone(false);
   }
 
+  /**
+   * Отвечает за изменение статуса заметки на "в процессе"
+   * при клике на голубую кнопку
+   */
   function handleBlueButtonClick() {
     setIsInProgress(true);
     setIsDone(false);
     setIsAwaiting(false);
   }
 
+  /**
+   * Отвечает за изменение статуса заметки на "выполнена"
+   * при клике на зеленую кнопку
+   */
   function handleGreenButtonClick() {
     setIsDone(true);
     setIsInProgress(false);
     setIsAwaiting(false);
   }
 
+  /**
+   * Отвечает за удаление заметки -
+   * вызывает функцию удаления из App.js
+   */
   function handleDeleteTask() {
     onDeleteTask(task);
   }
 
+  /**
+   * Отвечает за клик по кнопке изменения заметки
+   * передает объъект изменяемой заметки в стейт в App.js
+   */
   function handleEditTaskButtonClick() {
     onEditTaskButtonClick(task);
   }

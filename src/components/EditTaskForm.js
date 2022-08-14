@@ -1,6 +1,4 @@
-import { useState } from "react";
-import Form from "./Form";
-
+// компонент формы редактирования заметок
 export default function EditTaskForm({
   onEditTask,
   editedTask,
@@ -8,16 +6,26 @@ export default function EditTaskForm({
   onEditFormChange,
   onCancelEditButtonClick,
 }) {
+  /**
+   * Отвечает за клик по кнопке отмены редактирования -
+   * вызывает функцию отмены из App.js
+   */
   function handleCancelEditButtonClick() {
     onCancelEditButtonClick();
   }
 
+  /**
+   * Отвечает за событие сабмита формы редактирования -
+   * вызывает функцию отправки формы из App.js
+   * @param {object} evt - событие отправки формы
+   */
   function handleSubmit(evt) {
     evt.preventDefault();
     onEditTask(editValue);
   }
+
   return (
-    <Form onSubmit={handleSubmit} buttonText='Сохранить изменения'>
+    <form className='form' onSubmit={handleSubmit}>
       <textarea
         className='form__edit-window'
         placeholder='Внесите свои изменения'
@@ -33,6 +41,6 @@ export default function EditTaskForm({
         onClick={handleCancelEditButtonClick}>
         Отменить редактирование
       </button>
-    </Form>
+    </form>
   );
 }
