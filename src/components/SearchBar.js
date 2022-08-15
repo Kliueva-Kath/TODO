@@ -1,4 +1,8 @@
 export default function SearchBar({ onSearchInputChange, searchTerm }) {
+  /**
+   * Вызывает функцию, отслеживающую изменения инпута поиска из App.js
+   * @param {object} evt - событие изменения инпута
+   */
   function handleSearchInputChange(evt) {
     onSearchInputChange(evt);
   }
